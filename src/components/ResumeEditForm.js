@@ -1,5 +1,6 @@
 'use client';
-import resumeData from '@/data/resumeData';
+// import resumeData from '@/data/resumeData';
+import resumeData from '../data/resumeData';
 import { useState } from 'react';
 
 export default function ResumeEditForm() {
