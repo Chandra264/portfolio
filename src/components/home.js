@@ -167,7 +167,7 @@ export default function Home() {
               }}
             />
             <img
-              src="/chandra.jpg"
+              src="/portfolio/chandra.jpg"
               alt="Chandra Reddy"
               width="180"
               height="180"

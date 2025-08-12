@@ -8,9 +8,11 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export', // Static HTML export
-  basePath: '/portfolio', // Repo name
-  assetPrefix: '/portfolio/',
+  output: 'export', // Required for static HTML export
+  basePath: '/portfolio', // 👈 replace with your repo name
+  images: {
+    unoptimized: true, // GitHub Pages can't optimize images
+  },
 };
 
 export default nextConfig;

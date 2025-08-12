@@ -1,4 +1,4 @@
-// import Home from "../components/home.js";
+// import Home from "../components/home";
 import Home from "@/src/components/home";
 
 export default function home() {
