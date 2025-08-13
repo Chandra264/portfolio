@@ -5,19 +5,36 @@
 // };
 
 // export default nextConfig;
-import type { NextConfig } from 'next';
+/** @type {import('next').NextConfig} */
+// const isProd: boolean = process.env.NODE_ENV === 'production';
 
-const nextConfig: NextConfig = {
+// const nextConfig = {
+//   output: 'export',
+//   basePath: isProd ? '/portfolio' : '',
+//   assetPrefix: isProd ? '/portfolio/' : '',
+//   images: {
+//     unoptimized: true,
+//   },
+// };
+
+// module.exports = nextConfig;
+/** @type {import('next').NextConfig} */
+const isProd:boolean = process.env.NODE_ENV === 'production';
+
+const nextConfig = {
   output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  env: {
-    NEXT_PUBLIC_BASE_PATH: '/portfolio', // expose to browser
+  // Add this to handle static assets
+  publicRuntimeConfig: {
+    basePath: isProd ? '/portfolio' : '',
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
 

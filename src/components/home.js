@@ -217,7 +217,7 @@ export default function Home() {
               }}
             />
             <img
-              src={`${basePath}/chandra.jpg`}
+              src={'./chandra.jpg'}
               alt="Chandra Reddy"
               width="180"
               height="180"
