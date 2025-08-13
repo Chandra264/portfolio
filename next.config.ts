@@ -1,11 +1,11 @@
-// import type { NextConfig } from "next";
+ import type { NextConfig } from "next";
 
 // const nextConfig: NextConfig = {
 //   /* config options here */
 // };
 
 // export default nextConfig;
-/** @type {import('next').NextConfig} */
+
 // const isProd: boolean = process.env.NODE_ENV === 'production';
 
 // const nextConfig = {
@@ -18,23 +18,13 @@
 // };
 
 // module.exports = nextConfig;
-/** @type {import('next').NextConfig} */
-const isProd:boolean = process.env.NODE_ENV === 'production';
-
-const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/portfolio' : '',
-  assetPrefix: isProd ? '/portfolio/' : '',
-  trailingSlash: true,
+const nextConfig: NextConfig = {
+  output: "export", // ✅ Required for static export
   images: {
-    unoptimized: true,
-  },
-  // Add this to handle static assets
-  publicRuntimeConfig: {
-    basePath: isProd ? '/portfolio' : '',
+    unoptimized: true, // ✅ Needed for GitHub Pages
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
 
 
