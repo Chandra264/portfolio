@@ -10,6 +10,7 @@ const resumeData = {
     "Bootstrap",
     "JavaScript",
     "React.js",
+    "Angular",
     "Redux",
     "Redux-thunk",
     "Material UI",
@@ -77,6 +78,7 @@ const resumeData = {
       "Bootstrap",
       "JavaScript",
       "React.js",
+      "Angular",
       "Redux",
       "Redux-thunk",
       "Material UI",
@@ -163,8 +165,7 @@ const resumeData = {
         "CSS3",
         "Bootstrap",
         "JavaScript",
-        "React.js",
-        "Redux",
+        "Angular",  
         "NodeJs",
         "Mongo Db"
        

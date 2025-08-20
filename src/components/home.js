@@ -306,7 +306,7 @@ export default function Home() {
           >
             A highly skilled Frontend Developer with experience in building
             scalable, responsive, and pixel-perfect web interfaces. I specialize
-            in JavaScript, React.js, Redux, and TypeScript. I'm passionate about
+            in JavaScript, React.js, Angular, Redux, and TypeScript. I'm passionate about
             turning design into functional UI/UX with strong attention to
             performance and clean architecture.
           </p>
@@ -494,8 +494,8 @@ export default function Home() {
                 value: "HTML5, CSS3, Sass, Bootstrap, JavaScript, TypeScript",
               },
               {
-                label: "Libraries:",
-                value: "React.js, Redux, Redux-Thunk, Redux Toolkit",
+                label: "framework/libraries:",
+                value: "Angular, React.js, Redux, Redux-Thunk, Redux Toolkit",
               },
               { label: "Testing:", value: "Jest with React Testing Library" },
               {
